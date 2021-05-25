@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8">
+	<title></title>
+	<style>
+		
+	</style>
+	<script src="js/jquery-3.6.0.min.js"></script>
+</head>
+<body>
+
+	<script>
+		$(function(){
+			$.ajax({
+				url:'book.xml',
+				dataType : 'xml',
+				success:function(){
+					$(data).find('book').each(function(){
+						var title = $('title',this).text();
+						var author = $('author', this).text();
+						var price = $('price', this).text();
+						var txt = '<li>'+title+' , '+author+' , '+price+'</li>';
+						$('body').append(txt);
+					});
+				}
+			});
+		});
+	</script>
+</body>
+</html>

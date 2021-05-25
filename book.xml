@@ -1,0 +1,18 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<books>
+	<book>
+		<title>html</title>
+		<author>홍길동</author>
+		<price>10,000</price>
+	</book>
+	<book>
+		<title>css</title>
+		<author>홍길동</author>
+		<price>10,000</price>
+	</book>
+	<book>
+		<title>javascript</title>
+		<author>홍길동</author>
+		<price>10,000</price>
+	</book>
+</books>
